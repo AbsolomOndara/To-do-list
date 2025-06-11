@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfect To-Do List</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Tasks</h1>
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Add a new task..." required>
+        <input type="text" id="description-input" placeholder="Description (optional)">
+        <input type="date" id="due-date-input">
+        <button type="submit"><i class="fas fa-plus"></i> Add Task</button>
+      </form>
+    </header>
+
+    <div class="filter-controls">
+      <button id="filter-all" class="active">All</button>
+      <button id="filter-active">Active</button>
+      <button id="filter-completed">Completed</button>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
